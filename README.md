@@ -1,5 +1,3 @@
-<div align="center">
-  
 # 2026A-ISWD743-practica1
 ### Práctica Pentaho ETL
   
@@ -214,7 +212,18 @@ Transformación: Seleccionar elementos de la tabla (columnas)
 Salida: Generación de un archivo XML/JSON con los resultados finales.
 
 
-Primero, es necesario crear una conexión a una base de datos para poder obtener los registros del servidor empaquetado en el contenedor. Así, seleccionamos la opción de Database connections -> New y se nos presentará una ventana para seleccionar el tipo de motor de base de datos necesario. <br>
+>[!WARNING]
+>
+> **ES NECESARIO realizar la [descarga del Microsoft JDBC Driver para SQL Server](https://learn.microsoft.com/es-es/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server?view=sql-server-ver17) para conectarnos al servidor de SQL**
+> Desde el sitio oficial de microsoft descargamos el archivo .zip para poder tener acceso al .jar (librería) y establecer conexión.<br>
+> [JDBC](CapturasSQL/8.png) <br>
+> Al descromprimir el archivo descargado debemos de copiar el archivo "mssql-jdbc-13.4.0.jre11" que se encuentra en la ruta de la imagen hacia la ruta donde se encuentran las librerias de Pentaho
+> [mssql-jdbc-13.4.0.jre11](CapturasSQL/9.png) <br>
+> data-integration\lib
+> [data-integration\lib](CapturasSQL/10.png) <br>
+> A continuación, es necesario cerrar el programa y volver a ejecutar el archivo por lotes para aplicar efecto.
+
+Primero, desde la vista "View" es necesario crear una conexión a una base de datos para poder obtener los registros del servidor empaquetado en el contenedor. Así, seleccionamos la opción de Database connections -> New y se nos presentará una ventana para seleccionar el tipo de motor de base de datos necesario. <br>
 
 **Captura:**
 ![VentanaConfiguracionConexion](CapturasSQL/6.png) <br>
@@ -224,11 +233,26 @@ Primero, debemos de nombrar a la conexión "sql.containter" en este caso, ingres
 **Captura:**
 ![VentanaConfiguracionConexion2](CapturasSQL/7.png) <br>
 
-A continuación, en el menú de "Options" pasamos a configurar algúnos parámetros necesarios para el correcto funcionamiento de la conexión"
+>[!WARNING]
+> A continuación, en el menú de "Options" pasamos a configurar algúnos parámetros necesarios para el correcto funcionamiento de la conexión". Agregamos un parámetro key:{driverClass}, value:{com.microsoft.sqlserver.jdbc.SQLServerDriver} y otro para key:{driverClass}, value:{com.microsoft.sqlserver.jdbc.SQLServerDriver}.<br>
+>[parametros](CapturasSQL/11.png) <br>
+> Finalmente, comprobamos la conexión al seleccionar la función "Test".<br>
+>[Test](CapturasSQL/12.png) <br>
 
 Así, procedemos a crear una nueva transformación desde el menú superior.<br>
 **Captura:**
 ![resultado](CapturasSQL/5.png) <br>
+
+A continuación, desde la vista "Design" vamos a cargar un Table input y al ingresar en la configuración, ingresamos la operación SQL requerida.<br>
+![consultaSQL](CapturasSQL/13.png)<br>
+También, podemos previsualizar los datos para comprobar la consulta.<br>
+![comprobacion](CapturasSQL/14.png)<br>
+Luego, agregamos una Transformación "Select Values" para poder seleccionar los elementos obtenidos de la anterior operación.
+![Lienzo](CapturasSQL/15.png)<br>
+Así mismo, al entrar en la configuración de la Transformación procedemos a seleccionar la opción "Get fields to select"
+![confTransformacion](CapturasSQL/16.png)<br>
+Finalmente, agregamos el output para obtener el resultado en XML.<br>
+![confTransformacion](CapturasSQL/17.png)<br>
 
 Después de ejecutar el comando para iniciar el proceso, observamos el correcto funcionamiento del flujo en los logs (Execution results) que presenta el sistema. Se observa que la transformación ha terminado correctamente y se procede a buscar el archivo en la ruta correspondiente.
 
