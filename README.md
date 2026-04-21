@@ -73,7 +73,7 @@ Se configuró un paso de **CSV file input** para leer el archivo original. Se de
 #### Paso 2: Transformación (String Operations)
 Para normalizar la información, se utilizó el paso **String operations**. Se seleccionó la columna `Name` y se aplicó la transformación **Upper** para convertir todos los nombres de minúsculas a **MAYÚSCULAS**.
 
-### Paso 3: Carga (Output)
+#### Paso 3: Carga (Output)
 Los datos transformados se enviaron a un archivo de salida llamado `Salida.csv` mediante el paso **Text file output**. En la configuración de salida:
 * Se cambió el separador a punto y coma (`;`).
 * Se forzó la inclusión de los nuevos campos transformados en la pestaña *Fields*.
