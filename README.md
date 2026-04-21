@@ -1,29 +1,43 @@
 # 2026A-ISWD743-practica1
+![Business Intelligence](https://img.shields.io/badge/Business_Intelligence-FF6C37?style=for-the-badge&logo=power-bi&logoColor=white)
+![EPN](https://img.shields.io/badge/Escuela_Politécnica_Nacional-003366?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyIDJMMiA3bDEwIDUgMTAtNS0xMC01ek0yIDE3bDEwIDUgMTAtNU0yIDEybDEwIDUgMTAtNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9zdmc+&logoColor=white)
+![Facultad de Ingeniería en Sistemas](https://img.shields.io/badge/FIS-Facultad_Ingeniería_Sistemas-003366?style=for-the-badge)
 # Práctica Pentaho ETL
 
-# 🧠 Práctica: Pentaho Data Integration (ETL)
-
-## Descripción
-
-Implementación de procesos ETL utilizando Pentaho Data Integration (PDI - Spoon), trabajando con diferentes tipos de entrada (Input) y transformaciones para el procesamiento de datos.
-
----
-
-## Objetivos
-
-* Comprender el proceso ETL (Extract, Transform, Load)
-* Trabajar con múltiples fuentes de datos
-* Aplicar transformaciones para limpieza y procesamiento
-* Generar salidas estructuradas
+>[!NOTE]
+>
+> Descripción: <br>
+> * Implementación de procesos ETL utilizando Pentaho Data Integration (PDI - Spoon), trabajando con diferentes tipos de entrada (Input) y transformaciones para el procesamiento de datos.
 
 ---
 
-## Tecnologías utilizadas
+>[!NOTE]
+>
+> Objetivos:
+> * Comprender el proceso ETL (Extract, Transform, Load)
+> * Trabajar con múltiples fuentes de datos
+> * Aplicar transformaciones para limpieza y procesamiento
+> * Generar salidas estructuradas
 
-* Pentaho Data Integration (Spoon)
-* Java JDK
-* Archivos: Excel, CSV, JSON, XML
-* (Opcional) Base de datos
+---
+
+>[!IMPORTANT]
+> Tecnologías utilizadas:
+> * Pentaho Data Integration (Spoon)
+>   ![Pentaho](https://img.shields.io/badge/Pentaho-FF8C00?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyIDJMNyA3bDUgNSA1LTV6TTcgMTdsNSA1IDUtNXoiIGZpbGw9IndoaXRlIi8+PC9zdmc+&logoColor=white)
+> * Java JDK
+> ![Java JDK](https://img.shields.io/badge/Java_JDK-18.0.0-007396?style=for-the-badge&logo=java&logoColor=white)
+> * SQL Server Managamente Studio 22
+> ![SSMS](https://img.shields.io/badge/SSMS-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
+> * Docker
+> ![Docker](https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+> * Github
+> ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+> * Archivos: Excel, CSV, JSON, XML, Tablas de Bases de datos SQL
+> ![Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+> ![JSON](https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white)
+> ![SQL Server](https://img.shields.io/badge/Microsoft_SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
+
 
 ---
 
