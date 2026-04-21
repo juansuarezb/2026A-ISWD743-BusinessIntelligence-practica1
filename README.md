@@ -207,11 +207,16 @@ Así, tendremos levantado el contenedor de SQL Server como se muestra a continua
 ![sqlserver-container](CapturasSQL/2.png)
 ---
 
-## Resultados
+Después de ejecutar el comando para iniciar el proceso, observamos el correcto funcionamiento del flujo en los logs (Execution results) que presenta el sistema. Se observa que la transformación ha terminado correctamente y se procede a buscar el archivo en la ruta correspondiente.
 
-* Integración de múltiples fuentes de datos
-* Transformación y limpieza de información
-* Generación de archivos procesados correctamente
+**Captura:**
+![resultado](CapturasSQL/resultado.png)
+
+Finalmente, al encontrar el archivo resultante de la transformación, encontramos un archivo XML "salida" y al abrirlo se comprueba la correcta transformación de los datos creados en la base de datos para la tabla de ventas del contenedor hacia un archivo json con los registros.
+
+**Captura:**
+![resultado](CapturasSQL/transformacionXML.png) 
+
 
 ---
 
