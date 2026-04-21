@@ -217,18 +217,18 @@ Salida: Generación de un archivo XML/JSON con los resultados finales.
 Primero, es necesario crear una conexión a una base de datos para poder obtener los registros del servidor empaquetado en el contenedor. Así, seleccionamos la opción de Database connections -> New y se nos presentará una ventana para seleccionar el tipo de motor de base de datos necesario. <br>
 
 **Captura:**
-![VentanaConfiguracionConexion](CreacionNuevaTransformacion/6.png) <br>
+![VentanaConfiguracionConexion](CapturasSQL/6.png) <br>
 
 Primero, debemos de nombrar a la conexión "sql.containter" en este caso, ingresamos el host name (localhost), el nombre de la base de datos, puerto que se mapeo al momento de crear el contenedor, usuario (sa) y contraseña.
 
 **Captura:**
-![VentanaConfiguracionConexion2](CreacionNuevaTransformacion/7.png) <br>
+![VentanaConfiguracionConexion2](CapturasSQL/7.png) <br>
 
 A continuación, en el menú de "Options" pasamos a configurar algúnos parámetros necesarios para el correcto funcionamiento de la conexión"
 
 Así, procedemos a crear una nueva transformación desde el menú superior.<br>
 **Captura:**
-![resultado](CreacionNuevaTransformacion/5.png) <br>
+![resultado](CapturasSQL/5.png) <br>
 
 Después de ejecutar el comando para iniciar el proceso, observamos el correcto funcionamiento del flujo en los logs (Execution results) que presenta el sistema. Se observa que la transformación ha terminado correctamente y se procede a buscar el archivo en la ruta correspondiente.
 
